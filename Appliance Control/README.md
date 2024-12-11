@@ -22,14 +22,14 @@ The program is divided into four parts, each addressing one of the required func
 - **Part 1**: Controls the appliance from Tuesday to Saturday, between 8:00 AM and 4:00 PM.
 - **Part 2**: Sequentially turns on and off outputs from Y0.0 to Y0.7, followed by turning them off in reverse order.
 - **Part 3**: Sequentially turns on and off outputs from Y0.0 to Y0.7, ensuring each output is individually turned on.
-- **Part 4**: Controls the appliance according to the intervals for each working day of the week. (to do - not finished)
+- **Part 4**: Controls the appliance according to the intervals for each working day of the week.
 
 ## Files
 
 - **[Part 1 - Appliance Control (Time-based)](part1.asm)**: Controls the appliance within the specified time window.
 - **[Part 2 - Sequential Output Control](part2.asm)**: Turns on outputs sequentially from Y0.0 to Y0.7 and off in reverse order.
 - **[Part 3 - Individual Output Control](part3.asm)**: Ensures each output is individually controlled.
-- **[Part 4 - Weekly Appliance Control](part4.asm)**: Controls the appliance based on the time intervals for each working day of the week. (to do - not finished)
+- **[Part 4 - Weekly Appliance Control](part4.asm)**: Controls the appliance based on the time intervals for each working day of the week. 
 
 ## Image
 

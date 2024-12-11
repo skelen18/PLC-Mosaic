@@ -5,7 +5,8 @@
 ;----------------------------------------
 
 ; Definice proměnných
-REG WORD TEMP       
+
+#REG WORD TEMP
 
 ; Postupné sepnutí výstupů od Y0.0 po Y0.7 během půl sekundy
 LD S5                

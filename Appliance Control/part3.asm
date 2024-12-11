@@ -1,11 +1,12 @@
 ;----------------------------------------
-; SEQUENCIAL OUTPUT SWITCHING PROGRAM   |
+; SEQUENCIAL OUTPUT SWITCHING PROGRAM    |
 ; Created for PLC Tecomat TC 600         |
 ; by Skelen                              |
 ;----------------------------------------
 
 ; Definice proměnných
-REG WORD TEMP      
+
+#REG WORD TEMP     
 
 ; Postupné sepnutí výstupů od Y0.0 po Y0.7 během půl sekundy
 ; Opakování pro každý výstup od Y0.0 až Y0.7

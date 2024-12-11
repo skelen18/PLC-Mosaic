@@ -5,7 +5,8 @@
 ;----------------------------------------
 
 ; Definice proměnných
-REG WORD PRDOBA      ; Pracovní doba
+
+#REG WORD PRDOBA      ; Pracovní doba
 
 ; Kontrola času (8:00 až 16:00)
 LD S8               
