@@ -1,51 +1,47 @@
-# Traffic Light Control Program
+# PLC Mosaic Solutions
 
-This repository contains the solution for controlling a traffic light intersection using a PLC (Programmable Logic Controller) Tecomat TC 600, implemented in the Mosaic programming environment.
+This repository contains solutions for PLC programming assignments I completed as part of my studies. These assignments are based on Tecomat PLC devices and are programmed using the **Mosaic programming environment**. The solutions are designed to help students learn how to work with PLCs and understand basic control logic.
 
-## Task Description
+## About the Repository
 
-The goal of this task is to create a traffic light control program for a traffic intersection using the PLC Tecomat TC 600. The program was developed in three variations, each using a different approach to control the traffic light outputs. The program executes a timing sequence as follows:
+This repository holds various solutions for PLC programming tasks. Each folder contains a specific project that addresses a unique assignment. The tasks are primarily written in **Czech** as they were created for a school located in the Czech Republic. These assignments are intended for students who are studying automation and PLC programming.
 
-- Cycle time (T) = 32 seconds
-- Orange light duration: 1/20 of T = 2 seconds
-- Green pedestrian light duration: 1/4 of T = 8 seconds
-- The red light on the main road is activated at the midpoint of the cycle.
+The programs are written in **Mosaic**'s specific assembly language and should be used in the corresponding **Mosaic** software to compile and upload to the Tecomat PLC devices.
 
-### Control Methods
+## Usage
 
-1. **Using the RES and SET instructions to control all outputs simultaneously.**
-2. **Using the RES and SET instructions to control each output individually.**
-3. **Using GT, LT, and WR instructions for controlling outputs.**
+To use and edit the programs in this repository:
 
-## Task Outputs
+1. **Download the code**: Download the relevant `.asm` file(s) from this repository.
+2. **Copy the code into Mosaic**: Do not directly upload the `.asm` file to Mosaic software. Instead, copy the text from the `.asm` file and paste it into a new program in the **Mosaic** software environment.
+3. **Set up your PLC project**: Create a new project in Mosaic and add the copied code to the project.
+4. **Editing and working in Visual Studio Code**:
+   - For a better coding experience with syntax highlighting and ease of editing, you can use the **ASM Code Lens** extension for Visual Studio Code. Install it by searching for `maziac.asm-code-lens` in the VS Code extension marketplace.
+   - This will allow you to view the assembly code with proper syntax highlighting and make your editing experience more intuitive.
 
-The program includes three versions based on the control method:
+### Example Folder
 
-- **Part 1**: All outputs controlled simultaneously using the RES and SET instructions.
-- **Part 2**: Each output controlled individually using RES and SET instructions.
-- **Part 3**: Outputs controlled using GT, LT, and WR instructions.
+For example, the **`traffic_light`** folder contains a solution for controlling a traffic light system. Inside that folder, you will find the **.asm** files for the specific control methods.
 
-## Files
+### Requirements
 
-- **[Part 1 - All Outputs Simultaneously](part1.asm)**: This version of the program sets and resets all outputs at once.
-- **[Part 2 - Individual Outputs Control](part2.asm)**: This version controls each output separately using RES and SET instructions.
-- **[Part 3 - Using GT, LT, WR Instructions](part3.asm)**: This version uses the GT, LT, and WR instructions for controlling the outputs.
+- **PLC Tecomat TC 600** or similar device
+- **Mosaic Programming Environment** (downloadable from the official Tecomat website)
 
-## Image
-- Example image
+## How to Use the Solutions
 
-![Traffic Light Timing](image.png)
+You are free to use the solutions for educational purposes, and you can modify them to fit your own PLC projects. However, these solutions are **not free to copy** and claim as your own. You can modify the code as needed, but please do not present it as your own work. This is intended for students studying automation and PLC programming.
 
-## Setup
+## Language
 
-Ensure that you have the necessary tools and hardware to run this program:
+- The majority of the programs are written in **Czech** because they were created for a school project in the Czech Republic.
+- **English** is not used in the programs as this is tailored to local education, but the general structure and logic of the programs are the same, so students outside of the Czech Republic can still benefit from them.
 
-- **PLC Tecomat TC 600**
-- **Mosaic Programming Environment**
-- **Traffic light model for demonstration**
+## License
 
-For setup instructions, please refer to the [Tecomat documentation](https://www.tecomat.cz/ke-stazeni/software/mosaic/).
+The solutions in this repository are free to use, but not for redistribution or claiming as your own. You can freely edit, adapt, and use these solutions in your own projects, but please respect the original work and give appropriate credit.
 
 ## Conclusion
 
-This project demonstrates a basic traffic light control program with different approaches to controlling the PLC outputs. The task was completed using PLC programming standards in the Mosaic environment for the Tecomat TC 600 system.
+This repository serves as a personal archive of PLC programming solutions for school assignments, and it's available for other students and developers who might benefit from the examples and learning experiences shared here. Feel free to explore the different folders, modify the code, and learn from it to enhance your PLC programming skills!
+
