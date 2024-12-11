@@ -49,3 +49,4 @@ For setup instructions, please refer to the [Tecomat documentation](https://www.
 ## Conclusion
 
 This project demonstrates a basic traffic light control program with different approaches to controlling the PLC outputs. The task was completed using PLC programming standards in the Mosaic environment for the Tecomat TC 600 system.
+
