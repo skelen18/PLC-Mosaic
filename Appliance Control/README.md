@@ -50,3 +50,4 @@ For setup instructions, please refer to the [Tecomat documentation](https://www.
 ## Conclusion
 
 This project demonstrates the control of an appliance based on different conditions, including time intervals for each day of the week. The task was completed using PLC programming standards in the Mosaic environment for the Tecomat TC 600 system. The program was developed collaboratively with **Vašunka**.
+
