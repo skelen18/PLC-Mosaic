@@ -4,7 +4,7 @@
 ; by Skelen                              |
 ;----------------------------------------
 
-; Definice proměnných 
+; Definice proměnných
 
 #reg WORD MP1  ; minuta před 1. zapnutím
 #reg WORD H1   ; hodina 1
@@ -14,87 +14,90 @@
 #reg WORD MZ2  ; minuta za 2. zapnutím
 #reg WORD MP3  ; minuta před 3. zapnutím
 #reg WORD H3   ; hodina 3
-#reg WORD MZ3  ; minuta za 3. zapnutím
+;#reg WORD MZ3  ; minuta za 3. zapnutím
 
 P 0
 
 ; -------------- 1. zapnutí spotřebiče --------------
 ; od 100 minut (1h40min) do 350 minut (5h50min)
 
-; MP1 
+; MP1
 LD S7
-GT 29  
+GT 39
 LD S8
-EQ 4   
+EQ 1
 AND
-WR MP1  
+WR MP1
 
-; H1 
+; H1
 LD S8
-GT 4   
+GT 1
 LD S8
+LT 5
 AND
-WR H1  
+WR H1
 
-; MZ1 
+; MZ1
 LD S7
-LT 1S  
+LT 50
 LD S8
-EQ 8   
+EQ 5
 AND
-WR MZ1  
+WR MZ1
 
 ; -------------- 2. zapnutí spotřebiče --------------
 ; od 450 minut (7h30min) do 700 minut (11h40min)
 
-; MP2 
+; MP2
 LD S7
-GT 449  
+GT 29
 LD S8
-EQ 13  
+EQ 7
 AND
-WR MP2  
+WR MP2
 
-; H2 
+; H2
 LD S8
-GT 12 
+GT 7
 LD S8
+LT 11
 AND
-WR H2 
+WR H2
 
-; MZ2 
+; MZ2
 LD S7
-LT 1S
+LT 30
 LD S8
-EQ 18  
+EQ 11
 AND
-WR MZ2  
+WR MZ2
 
 ; -------------- 3. zapnutí spotřebiče --------------
 ; od 850 minut (14:10) do 1200 minut (20:00)
 
 ; MP3
 LD S7
-GT 849  
+GT 9
 LD S8
-EQ 23 
+EQ 14
 AND
-WR MP3  
+WR MP3
 
 ; H3
 LD S8
-GT 22  
+GT 14
 LD S8
+LT 20
 AND
-WR H3  
+WR H3
 
-; MZ3 
-LD S7
-LT 1S
-LD S8
-EQ 25  
-AND
-WR MZ3  
+; MZ3
+;LD S7
+;LT 0
+;LD S8
+;EQ 20
+;AND
+;WR MZ3
 
 ; Součet intervalů
 LD MP1
@@ -105,17 +108,16 @@ OR H2
 OR MZ2
 OR MP3
 OR H3
-OR MZ3
+;OR MZ3
 
 ; Pracovní dny a zapsání do výstupu
 LD S9
-LT 6   
+LT 6
 AND
-WR Y0.0  
+WR Y0.0
 
 E 0
 
 ;----------------------------------------
 ;             END - by Skelen            |
 ;----------------------------------------
-
